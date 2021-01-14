@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ni235.core.fund.dao.JjFundInfoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ni235.core.fund.entity.JjFundInfoEntity" id="fundInfoMap">
+        <result property="symbol" column="symbol"/>
+        <result property="name" column="name"/>
+        <result property="sname" column="sname"/>
+        <result property="type" column="type"/>
+        <result property="perNav" column="per_nav"/>
+        <result property="day" column="day"/>
+        <result property="week" column="week"/>
+        <result property="oneMonth" column="one_month"/>
+        <result property="threeMonth" column="three_month"/>
+        <result property="sixMonth" column="six_month"/>
+        <result property="thisYear" column="this_year"/>
+        <result property="oneYear" column="one_year"/>
+        <result property="threeYear" column="three_year"/>
+        <result property="date" column="date"/>
+    </resultMap>
+
+
+</mapper>

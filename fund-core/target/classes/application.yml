@@ -1,0 +1,17 @@
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+spring:
+  application:
+    name: fund
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://tapidedb.mysql.rds.aliyuncs.com:3306/jijin?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    username: tapide
+    password: 123567@a
+server:
+  port: 80
